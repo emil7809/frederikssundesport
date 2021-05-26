@@ -5,3 +5,42 @@ Author: Gruppe 16
 Version: 1.0.0
 Description: Frederikssund Esport
 */
+
+h1 {
+    color: #00CBF5;
+    font-family: 'Onwald', sans-serif;
+    font-weight: bold;
+}
+
+h1.hero-title {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 8rem;
+    text-shadow: 8px 8px 8px black;
+}
+
+p.header-subtitle {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 8rem;
+    text-shadow: 8px 8px 8px black;
+}
+
+a {
+    color: white !important;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold !important;
+}
+
+
+
+
+
+div#wp-custom-header.cp-video-bg {
+
+    top: -8vw !important;
+}
+
+
