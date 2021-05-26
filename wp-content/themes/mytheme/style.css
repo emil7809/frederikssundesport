@@ -16,7 +16,7 @@ h1.hero-title {
     color: white;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    font-size: 8rem;
+    font-size: 3rem;
     text-shadow: 8px 8px 8px black;
 }
 
@@ -24,7 +24,7 @@ p.header-subtitle {
     color: white;
     font-family: 'Oswald', sans-serif;
     font-weight: lighter;
-    font-size: 8rem;
+    font-size: 3rem;
     text-shadow: 8px 8px 8px black;
 }
 
@@ -35,12 +35,37 @@ a {
 }
 
 
-
-
-
 div#wp-custom-header.cp-video-bg {
+    background-image: url(img/mobil_splash.png) !important;
+    background-size: cover !important;
+    background-color: #000000;
+    background-position: center top;
+    background-size: cover;
+    position: absolute;
+    z-index: -3;
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    top: -70px;
+    -webkit-transform: translate3d(0, 0, -2px);
 
-    top: -8vw !important;
 }
 
+@media only screen and (min-width: 600px) {
 
+    h1.hero-title {
+        font-size: 8rem;
+        text-shadow: 8px 8px 8px black;
+    }
+
+    p.header-subtitle {
+        font-size: 8rem;
+        text-shadow: 8px 8px 8px black;
+    }
+
+    div#wp-custom-header.cp-video-bg {
+
+        top: -8vw !important;
+    }
+
+}

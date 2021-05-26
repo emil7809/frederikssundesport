@@ -20,9 +20,9 @@ if ( function_exists( 'wp_body_open' ) ) {
         <?php mesmerize_print_header_top_bar(); ?>
 
         <?php mesmerize_get_navigation(); ?>
-       <div id="logo_container">
-            <img src="<?php echo get_stylesheet_directory_uri()?>/img/raven.jpg" alt="raven" id="logo">
-       </div>
+        <div id="logo_container">
+            <a href="http://emilyhoolahan.com/kea/10_eksamen/frederikssundesport/"><img src="<?php echo get_stylesheet_directory_uri()?>/img/raven.jpg" alt="raven" id="logo"></a>
+        </div>
 
     </div>
 
@@ -36,7 +36,7 @@ if ( function_exists( 'wp_body_open' ) ) {
         <style>
             .navigation-bar.coloured-nav {
                 background: linear-gradient(90deg, rgba(10, 0, 7, 1) 0%, rgba(51, 16, 40, 1) 35%, rgba(126, 12, 91, 1) 50%, rgba(51, 16, 40, 1) 65%, rgba(10, 0, 7, 1) 100%);
-                 z-index: 100 !important;
+                z-index: 100 !important;
             }
 
             #logo_container {
@@ -49,15 +49,14 @@ if ( function_exists( 'wp_body_open' ) ) {
                 margin-top: -90px;
                 z-index: 100;
                 position: fixed;
+                margin-left: -90px;
             }
 
             .main_menu_col {
                 justify-content: center;
             }
 
-            #main_menu {
-
-            }
+            #main_menu {}
 
             #menu-item-40 {
                 margin-right: 200px;
@@ -73,8 +72,23 @@ if ( function_exists( 'wp_body_open' ) ) {
 
             #main_menu a {
                 font-size: 1.5rem;
-                 padding-left: 20px;
-                 padding-right: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            @media only screen and (max-width: 600px) {
+
+                #logo {
+                   display: none;
+                }
+
+                .main_menu_col {
+                    justify-content: flex-end;
+                }
+
+                .logo_col {
+                    display: block;
+                }
             }
 
         </style>
