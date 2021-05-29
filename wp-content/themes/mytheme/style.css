@@ -6,6 +6,35 @@ Version: 1.0.0
 Description: Frederikssund Esport
 */
 
+div:before,
+ul:before,
+article:before,
+aside:before,
+details:before,
+figcaption:before,
+figure:before,
+footer:before,
+header:before,
+hgroup:before,
+menu:before,
+nav:before,
+section:before,
+div:after,
+ul:after,
+article:after,
+aside:after,
+details:after,
+figcaption:after,
+figure:after,
+footer:after,
+header:after,
+hgroup:after,
+menu:after,
+nav:after,
+section:after {
+    display: none;
+}
+
 main {
     margin: 10px;
     max-width: 100% !important;
@@ -103,11 +132,16 @@ div#wp-custom-header.cp-video-bg {
 }
 
 #omos_wrapper {
+    margin-top: 210px;
     padding: 10px;
 }
 
 #omos_tekst {
     padding: 10px;
+}
+
+.p2 {
+    margin-top: 10px;
 }
 
 #omos_billeder {
@@ -174,24 +208,58 @@ button {
         top: -8vw !important;
     }
 
-    #omos_wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    #omos_wrapper h2 {
+        margin-left: 200px;
     }
 
-    #omos_tekst {
-        place-self: center;
+    .omos_container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
+        grid-auto-flow: column;
+        grid-gap: 10px;
+        margin: 10px;
+        padding: 10px;
     }
 
-    #omos_billede {
+    .col1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin: 10px;
+        padding: 50px 200px 0px 200px;
         place-self: center;
+    }
+
+    .p2 {
+        margin-top: 0;
+    }
+
+    #gratis_wrapper {
+        height: 40vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        height: 70px;
+    }
+
+    #gratis_wrapper button {
+
+        margin-top: 810px;
+    }
+
+    #spil_wrapper {
+        margin-top: 210px;
+    }
+
+    #spil_wrapper h2 {
+        margin-left: 10vw;
     }
 
     #spil {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
         grid-gap: 0.5em;
         margin: 2em;
         margin-left: 10vw;
@@ -199,4 +267,103 @@ button {
     }
 
 
+
+
 }
+
+/*FORSIDE*/
+
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 60px;
+}
+
+
+#sponsorer_wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 95vw;
+}
+
+.sponsorer_container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 30px;
+    margin-top: 10px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    margin-left: -30px;
+    grid-gap: 10px;
+    margin-left: 0px;
+}
+
+.podcast_container:before {
+    display: none;
+}
+
+.alle_container {
+    width: 350px;
+}
+
+#billede {
+    width: 100%;
+    cursor: pointer;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.pil {
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    cursor: pointer;
+}
+
+.pil_back {
+    position: absolute;
+    left: 5px;
+    top: 45%;
+    cursor: pointer;
+}
+
+.alle_container {
+    width: 350px;
+}
+
+.slide {
+    animation-name: slide_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slide_kf {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-10px);
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    #sponsorer_wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+
+}
+
+
+
+/*FORSIDE*/

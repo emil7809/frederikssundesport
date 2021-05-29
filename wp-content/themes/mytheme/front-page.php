@@ -1,153 +1,66 @@
 <?php mesmerize_get_header(); ?>
-
+<template>
+    <div class="alle_container">
+        <img id="billede" src="" alt="">
+    </div>
+</template>
 <main>
+    <section class="sponsorer_container"> </section>
     <div id="sponsorer_wrapper">
-        <section class="sponsorer_container">
-            <img class="pil slide" src="<?php echo get_stylesheet_directory_uri()?>/img/pil2.png" alt="pil">
-            <img class="pil_back" src="<?php echo get_stylesheet_directory_uri()?>/img/pil_back.png" alt="pil">
-        </section>
+
+        <img class="pil slide" src="<?php echo get_stylesheet_directory_uri()?>/img/pil2.png" alt="pil">
+        <img class="pil_back" src="<?php echo get_stylesheet_directory_uri()?>/img/pil_back.png" alt="pil">
+
     </div>
 
     <section id="omos_wrapper">
+        <h2>OM FREDERIKSSUND ESPORT</h2>
+        <div class="omos_container">
+            <div class="col1">
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        <br>
+                    </p>
+                </div>
 
-        <div id="omos_tekst">
-            <h2>OM FREDERIKSSUND ESPORT</h2>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    <br>
-                </p>
+                <div class="p2">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
             </div>
 
-            <div>
-                <p>
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </p>
+            <div class="col2">
+                <img class="img1" src="<?php echo get_stylesheet_directory_uri()?>/img/billiede1.png" alt="billede1">
+                <img class="img2" src="<?php echo get_stylesheet_directory_uri()?>/img/billiede2.png" alt="billede2">
             </div>
 
         </div>
-        <div id="omos_billeder">
-            <img class="img1" src="<?php echo get_stylesheet_directory_uri()?>/img/billiede1.png" alt="billede1">
-            <img class="img2" src="<?php echo get_stylesheet_directory_uri()?>/img/billiede2.png" alt="billede2">
-        </div>
+
     </section>
 
     <section id="gratis_wrapper">
         <button>FÅ EN GRATIS PRØVETIME</button>
     </section>
 
-    <section id="spil">
+    <section id="spil_wrapper">
         <h2>SPIL</h2>
-        <img src="<?php echo get_stylesheet_directory_uri()?>/img/spil/csgo.jpg" alt="csgo">
-        <img src="<?php echo get_stylesheet_directory_uri()?>/img/spil/fortnite.jpg" alt="fortnite">
-        <img src="<?php echo get_stylesheet_directory_uri()?>/img/spil/lol.jpg" alt="lol">
-        <img src="<?php echo get_stylesheet_directory_uri()?>/img/spil/overwatch.jpg" alt="overwatch">
-        <img src="<?php echo get_stylesheet_directory_uri()?>/img/spil/rainbow.jpg" alt="rainbow">
-        <img src="<?php echo get_stylesheet_directory_uri()?>/img/spil/valo.jpg" alt="valorant">
+        <div id="spil">
+            <img src="<?php echo get_stylesheet_directory_uri()?>/img/spil/csgo.jpg" alt="csgo">
+            <img src="<?php echo get_stylesheet_directory_uri()?>/img/spil/fortnite.jpg" alt="fortnite">
+            <img src="<?php echo get_stylesheet_directory_uri()?>/img/spil/lol.jpg" alt="lol">
+            <img src="<?php echo get_stylesheet_directory_uri()?>/img/spil/overwatch.jpg" alt="overwatch">
+            <img src="<?php echo get_stylesheet_directory_uri()?>/img/spil/rainbow.jpg" alt="rainbow">
+            <img src="<?php echo get_stylesheet_directory_uri()?>/img/spil/valo.jpg" alt="valorant">
+        </div>
     </section>
 
 </main>
 
-<template>
-    <div class="alle_container">
-        <img id="billede" src="" alt="">
-    </div>
-</template>
-
-<style>
-    main {
-        max-width: 1300px;
-        margin: 0 auto;
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-bottom: 60px;
-    }
 
 
-    #sponsorer_wrapper {
-        position: relative;
-        overflow: hidden;
-        width: 95vw;
-    }
 
-    .sponsorer_container {
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-gap: 30px;
-        margin-top: 10px;
-        overflow-x: scroll;
-        scroll-behavior: smooth;
-        margin-left: -30px;
-        grid-gap: 10px;
-        margin-left: 0px;
-    }
-
-    .podcast_container:before {
-        display: none;
-    }
-
-    .alle_container {
-        width: 350px;
-    }
-
-    #billede {
-        width: 100%;
-        cursor: pointer;
-    }
-
-    img {
-        height: auto;
-        max-width: 100%;
-    }
-
-    .pil {
-        position: absolute;
-        right: 10px;
-        top: 45%;
-        cursor: pointer;
-    }
-
-    .pil_back {
-        position: absolute;
-        left: 5px;
-        top: 45%;
-        cursor: pointer;
-    }
-
-    .alle_container {
-        width: 350px;
-    }
-
-    .slide {
-        animation-name: slide_kf;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-    }
-
-    @keyframes slide_kf {
-        0% {
-            transform: translateX(0px);
-        }
-
-        100% {
-            transform: translateX(-10px);
-        }
-
-    }
-
-    @media only screen and (min-width: 600px) {
-
-        #sponsorer_wrapper {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-        }
-
-    }
-
-</style>
 
 <script>
     let sponsorer;
