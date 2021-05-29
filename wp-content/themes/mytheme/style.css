@@ -364,6 +364,18 @@ img {
 
 }
 
+.red_salvation {
+    background: rgb(0, 203, 245) !important;
+    background: linear-gradient(90deg, rgba(0, 203, 245, 1) 0%, rgba(101, 0, 221, 1) 50%, rgba(255, 0, 113, 1) 100%) !important;
+}
 
+.header.color-overlay:after {
+    background: url(img/splash_img2.png) center center/ cover no-repeat !important;
+
+}
+
+.color-overlay:after {
+    top: 70px;
+}
 
 /*FORSIDE*/
