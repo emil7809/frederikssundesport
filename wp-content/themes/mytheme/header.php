@@ -40,6 +40,7 @@ if ( function_exists( 'wp_body_open' ) ) {
             .navigation-bar.coloured-nav {
                 background: linear-gradient(90deg, rgba(10, 0, 7, 1) 0%, rgba(51, 16, 40, 1) 35%, rgba(126, 12, 91, 1) 50%, rgba(51, 16, 40, 1) 65%, rgba(10, 0, 7, 1) 100%);
                 z-index: 100 !important;
+                height: 4vw;
             }
 
             #logo_container {

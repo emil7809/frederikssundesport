@@ -56,7 +56,7 @@ h2 {
     font-family: 'Onwald', sans-serif;
     font-weight: bold;
     font-size: 2rem;
-    text-align: left;
+    /*text-align: left;*/
 }
 
 h1.hero-title {
@@ -75,6 +75,9 @@ p.header-subtitle {
     text-shadow: 8px 8px 8px black;
     text-align: center;
 }
+
+
+/*BUTTON*/
 
 .button.color1 {
     border: 5px solid rgba(0, 203, 245, 0);
@@ -103,6 +106,21 @@ p.header-subtitle {
 .button.round {
     border-radius: 0px;
 }
+
+.elementor-widget-button .elementor-button {
+    border: 5px solid rgba(0, 203, 245, 0);
+    background-color: #00CBF5 !important;
+    border-radius: 0px;
+}
+
+.elementor-element.elementor-button-info .elementor-button {
+    border: 5px solid #00CBF5;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/*BUTTON*/
+
+
 
 p {
     color: white;
@@ -393,3 +411,31 @@ label {
 }
 
 /*Tilmeld*/
+
+/*OM OS*/
+
+
+.elementor-section.elementor-top-section.elementor-element.elementor-element-39473e0.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
+    background: linear-gradient(90deg, rgba(10, 0, 7, 0.5) 0%, rgba(51, 16, 40, 0.5) 35%, rgba(126, 12, 91, 0.5) 50%, rgba(51, 16, 40, 0.5) 65%, rgba(10, 0, 7, 0.5) 100%);
+    top: 5.2vw;
+    position: sticky;
+    z-index: 999;
+}
+
+.elementor-element.elementor-button-success .elementor-button {
+    border: 5px solid rgb(255, 255, 255);
+    background-color: #000000 !important;
+    height: 70px;
+    position: sticky;
+    text-align: center;
+}
+
+.elementor-element.elementor-element-ef30257.elementor-button-success.elementor-widget.elementor-widget-button {
+    margin-right: 200px;
+}
+
+.elementor-column.elementor-col-14.elementor-top-column.elementor-element.elementor-element-50af453 {
+    margin-left: 200px;
+}
+
+/*OM OS*/
