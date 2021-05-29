@@ -6,10 +6,24 @@ Version: 1.0.0
 Description: Frederikssund Esport
 */
 
+main {
+    margin: 10px;
+    max-width: 100% !important;
+}
+
 h1 {
     color: #00CBF5;
     font-family: 'Onwald', sans-serif;
     font-weight: bold;
+    font-size: 3rem;
+}
+
+h2 {
+    color: white;
+    font-family: 'Onwald', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
 }
 
 h1.hero-title {
@@ -26,6 +40,43 @@ p.header-subtitle {
     font-weight: lighter;
     font-size: 3rem;
     text-shadow: 8px 8px 8px black;
+    text-align: center;
+}
+
+.button.color1 {
+    border: 5px solid rgba(0, 203, 245, 0);
+    background-color: #00CBF5;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.button.white {
+    border: 5px solid #00CBF5 !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.button.round {
+    border-radius: 0px;
+}
+
+p {
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: left;
 }
 
 a {
@@ -51,15 +102,70 @@ div#wp-custom-header.cp-video-bg {
 
 }
 
+#omos_wrapper {
+    padding: 10px;
+}
+
+#omos_tekst {
+    padding: 10px;
+}
+
+#omos_billeder {
+    width: 60vw;
+}
+
+.img1 {
+    margin: 50px 5px 5px 90px;
+}
+
+.img2 {
+    margin: -50px 5px 5px 5px;
+}
+
+
+#gratis_wrapper {
+    background-image: url(img/provetime.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 70vw;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+button {
+    border: 5px solid #00CBF5;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#gratis_wrapper button {
+    margin-top: 210px;
+}
+
+
+#spil {
+    margin-top: 210px;
+}
+
+#spil img {
+    margin-top: 1 0px;
+}
+
 @media only screen and (min-width: 600px) {
 
     h1.hero-title {
-        font-size: 8rem;
+        font-size: 6rem;
         text-shadow: 8px 8px 8px black;
     }
 
     p.header-subtitle {
-        font-size: 8rem;
+        font-size: 6rem;
         text-shadow: 8px 8px 8px black;
     }
 
@@ -67,5 +173,30 @@ div#wp-custom-header.cp-video-bg {
 
         top: -8vw !important;
     }
+
+    #omos_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #omos_tekst {
+        place-self: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #omos_billede {
+        place-self: center;
+    }
+
+    #spil {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-gap: 0.5em;
+        margin: 2em;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
 
 }
