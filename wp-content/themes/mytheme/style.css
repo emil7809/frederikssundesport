@@ -40,6 +40,10 @@ main {
     max-width: 100% !important;
 }
 
+body {
+    max-width: 100% !important;
+}
+
 h1 {
     color: #00CBF5;
     font-family: 'Onwald', sans-serif;
@@ -379,3 +383,13 @@ img {
 }
 
 /*FORSIDE*/
+
+/*Tilmeld*/
+
+label {
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+
+/*Tilmeld*/
