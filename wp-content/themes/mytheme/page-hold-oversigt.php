@@ -25,7 +25,7 @@
     let categories;
     let filterHold = "alle";
 
-    const dbUrl = "http://emilyhoolahan.com/kea/10_eksamen/frederikssundesport/wp-json/wp/v2/sponsor?per_page=100";
+    const dbUrl = "http://emilyhoolahan.com/kea/10_eksamen/frederikssundesport/wp-json/wp/v2/hold?per_page=100";
     const catUrl = "http://emilyhoolahan.com/kea/10_eksamen/frederikssundesport/wp-json/wp/v2/categories";
 
     async function getJson() {
