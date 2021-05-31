@@ -1,12 +1,18 @@
 <?php mesmerize_get_header(); ?>
-<template>
-    <div class="alle_container">
-        <img id="billede" src="" alt="">
-    </div>
-</template>
+
 <main>
-    <section class="sponsorer_container"> </section>
+
     <div id="sponsorer_wrapper">
+
+        <div class="sponsorer_container">
+            <div class="img_cont"><img src="<?php echo get_stylesheet_directory_uri()?>/img/sponsorer/asetek.png" alt="aitaexchange"></div>
+            <div class="img_cont"><img src="<?php echo get_stylesheet_directory_uri()?>/img/sponsorer/ditaexchange.png" alt="ditaexchange"></div>
+            <div class="img_cont"><img src="<?php echo get_stylesheet_directory_uri()?>/img/sponsorer/lokalbolig.png" alt="lokalbolig"></div>
+            <div class="img_cont"><img src="<?php echo get_stylesheet_directory_uri()?>/img/sponsorer/sandberg.png" alt="sandberg"></div>
+            <div class="img_cont"><img src="<?php echo get_stylesheet_directory_uri()?>/img/sponsorer/hardortopsoe.png" alt="hardortopsoe"></div>
+            <div class="img_cont"><img src="<?php echo get_stylesheet_directory_uri()?>/img/sponsorer/minorsupport.png" alt="minorsupport"></div>
+            <div class="img_cont"><img src="<?php echo get_stylesheet_directory_uri()?>/img/sponsorer/skolen_bifrost.png" alt="skolen_bifrost"></div>
+        </div>
 
         <img class="pil slide" src="<?php echo get_stylesheet_directory_uri()?>/img/pil2.png" alt="pil">
         <img class="pil_back" src="<?php echo get_stylesheet_directory_uri()?>/img/pil_back.png" alt="pil">
@@ -14,7 +20,7 @@
     </div>
 
     <section id="omos_wrapper">
-        <h2>OM FREDERIKSSUND ESPORT</h2>
+        <h2>VELKOMMEN TIL <br> FREDERIKSSUND ESPORT</h2>
         <div class="omos_container">
             <div class="col1">
                 <div>
@@ -41,11 +47,13 @@
     </section>
 
     <section id="gratis_wrapper">
-        <button>FÅ EN GRATIS PRØVETIME</button>
+        <h2>FÅ EN GRATIS <br>PRØVETIME</h2>
+        <button>TILMELD DIG</button>
     </section>
 
     <section id="spil_wrapper">
         <h2>SPIL</h2>
+        <div class="line"></div>
         <div id="spil">
             <img src="<?php echo get_stylesheet_directory_uri()?>/img/spil/csgo.jpg" alt="csgo">
             <img src="<?php echo get_stylesheet_directory_uri()?>/img/spil/fortnite.jpg" alt="fortnite">
@@ -63,36 +71,6 @@
 
 
 <script>
-    let sponsorer;
-
-    const dbUrl = "http://emilyhoolahan.com/kea/10_eksamen/frederikssundesport/wp-json/wp/v2/sponsor?per_page=100";
-
-    async function getJson() {
-        const data = await fetch(dbUrl);
-        sponsorer = await data.json();
-        console.log("sponsorer: ", sponsorer);
-
-        visSponsorer();
-
-    }
-
-    function visSponsorer() {
-        console.log("visSponsorer");
-        sponsorer.reverse()
-        const container = document.querySelector(".sponsorer_container");
-        const template = document.querySelector("template");
-        sponsorer.forEach(sponsor => {
-            let klon = template.cloneNode(true).content;
-
-            klon.querySelector("#billede").src = sponsor.sponsor.guid;
-            klon.querySelector("#billede").addEventListener("click", () => visDetaljer(sponsor));
-
-            container.appendChild(klon);
-
-
-        })
-    }
-
     //---------SCROLL VED KLIK-----------
 
     //---første pil
