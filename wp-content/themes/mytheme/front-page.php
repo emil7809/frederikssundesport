@@ -46,13 +46,17 @@
 
     </section>
 
+    <section id="youtube">
+        <iframe src="https://www.youtube.com/embed/4In7oSxCiM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
     <section id="gratis_wrapper">
         <h2>FÅ EN GRATIS <br>PRØVETIME</h2>
         <button>TILMELD DIG</button>
     </section>
 
     <section id="spil_wrapper">
-        <h2>SPIL</h2>
+        <h2>VORES SPIL</h2>
         <div class="line"></div>
         <div id="spil">
             <img src="<?php echo get_stylesheet_directory_uri()?>/img/spil/csgo.jpg" alt="csgo">

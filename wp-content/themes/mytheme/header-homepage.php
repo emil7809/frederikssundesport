@@ -21,7 +21,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 
         <?php mesmerize_get_navigation(); ?>
         <div id="logo_container">
-            <a href="http://emilyhoolahan.com/kea/10_eksamen/frederikssundesport/"><img src="<?php echo get_stylesheet_directory_uri()?>/img/raven.jpg" alt="raven" id="logo"></a>
+            <a href="http://emilyhoolahan.com/kea/10_eksamen/frederikssundesport/"><img src="<?php echo get_stylesheet_directory_uri()?>/img/logo_white.png" alt="logo" id="logo"></a>
         </div>
 
     </div>
@@ -35,8 +35,10 @@ if ( function_exists( 'wp_body_open' ) ) {
 
         <style>
             .navigation-bar.coloured-nav {
-                background: linear-gradient(90deg, rgba(10, 0, 7, 1) 0%, rgba(51, 16, 40, 1) 35%, rgba(126, 12, 91, 1) 50%, rgba(51, 16, 40, 1) 65%, rgba(10, 0, 7, 1) 100%);
+                background: rgb(10, 0, 7);
+                background: linear-gradient(270deg, rgba(10, 0, 7, 1) 0%, rgba(38, 39, 39, 1) 35%, rgba(80, 80, 80, 1) 50%, rgba(38, 39, 39, 1) 65%, rgba(10, 0, 7, 1) 100%);
                 z-index: 100 !important;
+                height: 100px;
             }
 
             #logo_container {
@@ -79,7 +81,7 @@ if ( function_exists( 'wp_body_open' ) ) {
             @media only screen and (max-width: 600px) {
 
                 #logo {
-                   display: none;
+                    display: none;
                 }
 
                 .main_menu_col {
@@ -89,6 +91,8 @@ if ( function_exists( 'wp_body_open' ) ) {
                 .logo_col {
                     display: block;
                 }
+
+
             }
 
         </style>

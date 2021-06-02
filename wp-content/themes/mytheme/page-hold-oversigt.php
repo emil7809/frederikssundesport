@@ -2,22 +2,25 @@
 
 <main>
 
-    <div class="line"></div>
+    <h2 class="vores_hold">Vores Hold</h2>
+
+    <div class="line top"></div>
 
     <div class="oversigt_txt">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
     </div>
 
-    <div class="line"></div>
+    <nav id="filtrering"><button data-hold="alle" class="valgt">Alle</button></nav>
 
-    <nav id="filtrering"><button data-hold="alle">Alle</button></nav>
 
 </main>
 <section id="hold_container"></section>
 
 <template>
     <article>
+      <h2 class="vores_hold"></h2>
+       <div class="line"></div>
         <img src="" alt="">
         <p class="tekst"></p>
     </article>
@@ -63,6 +66,8 @@
 
     function filtrering() {
         filterHold = this.dataset.hold;
+        document.querySelector(".valgt").classList.remove("valgt");
+        this.classList.add("valgt");
         visHoldd();
     }
 
@@ -73,6 +78,7 @@
         holdd.forEach(hold => {
             if (filterHold == "alle" || hold.categories.includes(parseInt(filterHold))) {
                 let klon = temp.cloneNode(true).content;
+                klon.querySelector("h2").textContent = hold.hold;
                 klon.querySelector("img").src = hold.billede.guid;
                 klon.querySelector(".tekst").textContent = hold.beskrivelse;
                 klon.querySelector("article").addEventListener("click", () => {

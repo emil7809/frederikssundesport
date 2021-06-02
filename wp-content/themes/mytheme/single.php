@@ -3,17 +3,19 @@
 <section id="primary" class="content-area">
     <main id="main" class="site-main">
 
-
-
         <article>
             <img src="" alt="" id="img">
             <div>
                 <h2></h2>
+                <div class="line"></div>
                 <p class="tekst"></p>
-                <p class="pris"></p>
-                <button>Tilbage</button>
             </div>
         </article>
+
+        <div id="button_holder">
+            <button class="single_button">BLIV MEDLEM</button>
+            <button class="single_button" onclick="goBack()">Tilbage</button>
+        </div>
 
     </main>
     <script>
