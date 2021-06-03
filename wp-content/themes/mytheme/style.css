@@ -160,7 +160,7 @@ p.header-subtitle {
     font-size: 1rem;
     color: white !important;
     font-family: 'Oswald', sans-serif;
-    font-weight: bold !important;
+    font-weight: 500 !important;
 }
 
 /*BUTTON*/
@@ -170,7 +170,7 @@ p.header-subtitle {
 p {
     color: white;
     font-family: 'Work Sans', sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 1rem;
     text-align: left;
 }
@@ -665,6 +665,7 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
 
 #filtrering button {
     width: 280px;
+    place-self: center;
 }
 
 #filtrering {
@@ -672,7 +673,7 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     margin-bottom: 100px;
     grid-gap: 10px;
-    max-width: 90vw;
+    max-width: 100%;
     margin-top: 100px;
 }
 

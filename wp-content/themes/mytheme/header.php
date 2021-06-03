@@ -77,9 +77,18 @@ if ( function_exists( 'wp_body_open' ) ) {
             }
 
             #main_menu a {
-                font-size: 1.5rem;
+                font-size: 1rem;
                 padding-left: 20px;
                 padding-right: 20px;
+            }
+
+               ul.dropdown-menu ul {
+               background-color: black;
+            }
+
+
+             ul.dropdown-menu ul a:hover{
+               color: #00CBF5 !important;
             }
 
             @media only screen and (max-width: 600px) {
