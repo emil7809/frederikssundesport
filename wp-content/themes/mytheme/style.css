@@ -288,13 +288,33 @@ button:hover {
 }
 
 .line {
+    /*
     background-color: #00CBF5;
     width: 80vw;
     margin-left: 10vw;
     height: 5px;
     margin-top: 20px;
     margin-bottom: 100px
+*/
+    background-image: url(img/swusj.png);
+    background-size: cover;
+    width: 90%;
+    height: 7.3vw;
+    margin-left: 5vw;
+    margin-top: 20px;
+    margin-bottom: 100px;
+
+
 }
+
+@media only screen and (min-width: 600px) {
+    .line {
+        margin-left: 0 !important;
+        width: 100%;
+        height: 3.5vw;
+    }
+}
+
 
 #spil {
     display: grid;
@@ -389,10 +409,8 @@ button:hover {
         margin-top: 210px;
     }
 
-    .line {
-        margin-left: 0;
-        width: 100%;
-    }
+
+
 
     #spil_wrapper h2 {
         text-align: center;
@@ -404,6 +422,7 @@ button:hover {
 }
 
 /*FORSIDE*/
+
 
 /*
 main {
@@ -526,26 +545,6 @@ label {
 
 
 
-.elementor-section.elementor-top-section.elementor-element.elementor-element-39473e0.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
-    background-color: black;
-    position: sticky;
-    z-index: 999;
-    display: grid;
-    margin-left: -15vw;
-    margin-right: -15vw;
-    max-width: 100vw;
-    background-color: black;
-    height: 150px;
-    top: 130px;
-    place-self: center;
-    padding-top: 50px;
-    margin-top: -96px;
-}
-
-.elementor-section.elementor-section-boxed > .elementor-container {
-    max-width: 100vw;
-}
-
 .elementor-element.elementor-button-success .elementor-button {
     border: 5px solid rgba(255, 255, 255, 0) !important;
     background-color: rgba(0, 0, 0, 0.0) !important;
@@ -557,6 +556,45 @@ label {
     font-family: 'Oswald', sans-serif;
     font-weight: bold !important;
 }
+
+.elementor-section.elementor-top-section.elementor-element.elementor-element-39473e0.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
+    background-color: black;
+    z-index: 999;
+    display: grid;
+    max-width: 100vw;
+    background-color: black;
+    height: 600px;
+    place-self: center;
+    padding-top: 50px;
+    margin: -10px;
+    margin-top: 29px;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .elementor-section.elementor-top-section.elementor-element.elementor-element-39473e0.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
+        margin-left: -15vw;
+        margin-right: -15vw;
+        max-width: 100vw;
+        background-color: black;
+        height: 150px;
+        top: 130px;
+        place-self: center;
+        padding-top: 50px;
+        margin-top: -26px;
+        position: sticky;
+    }
+
+    .elementor-section.elementor-section-boxed > .elementor-container {
+        max-width: 100vw;
+    }
+
+
+
+}
+
+
+
 
 /*
 .elementor-element.elementor-element-ef30257.elementor-button-success.elementor-widget.elementor-widget-button {
@@ -716,24 +754,36 @@ p {
 
 .elementor-section.elementor-top-section.elementor-element.elementor-element-fbca747.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
     background-color: black;
-    position: sticky;
     z-index: 999;
     display: grid;
-    margin-left: -15vw;
-    margin-right: -15vw;
     max-width: 100vw;
     background-color: black;
-    height: 150px;
-    top: 130px;
+    height: 400px;
     place-self: center;
     padding-top: 50px;
-    margin-top: -96px;
+    margin-top: 29px;
 }
 
-.elementor-column.elementor-col-25, .elementor-column[data-col="25"] {
 
-    padding-left: 40px;
-    padding-right: 40px;
+@media only screen and (min-width: 600px) {
+
+    .elementor-section.elementor-top-section.elementor-element.elementor-element-fbca747.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
+        position: sticky;
+        display: grid;
+        margin-left: -15vw;
+        margin-right: -15vw;
+        height: 150px;
+        top: 130px;
+        place-self: center;
+        padding-top: 50px;
+        margin-top: -26px;
+    }
+
+    .elementor-column.elementor-col-25,
+    .elementor-column[data-col="25"] {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 /*KALEDNER*/
