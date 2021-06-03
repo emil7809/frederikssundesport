@@ -75,7 +75,7 @@
     }
 
     .footer {
-/*
+        /*
         width: 100%;
         max-width: 100%;
 */
@@ -93,6 +93,8 @@
         text-align: center !important;
         font-size: 1.5rem;
         line-height: 30px;
+        padding: 0;
+        margin: 0;
     }
 
     .footer_wrapper a {
@@ -136,14 +138,11 @@
         .footer_wrapper {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-gap: 200px;
             padding: 50px;
 
         }
 
-        .center {
-            text-align: left;
-        }
+
 
         .footer_wrapper p {
             text-align: left !important;
@@ -157,6 +156,8 @@
             margin-top: 20px;
             width: 100px;
             height: 100px;
+            padding: 0;
+            margin: 0;
 
         }
 
@@ -170,12 +171,20 @@
             place-self: center;
         }
 
-         #nyttige {
+        #nyttige {
             place-self: center;
         }
 
-         #follow {
+        #follow {
             place-self: center;
+        }
+
+        .margin_bottom {
+            margin-bottom: 0px;
+        }
+
+        h3 {
+            margin-bottom: 50px;
         }
 
 
