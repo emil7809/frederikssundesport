@@ -98,7 +98,7 @@ p.header-subtitle {
 /*BUTTON*/
 
 button {
-    border: 5px solid white !important;
+    border: 3px solid white !important;
     background-color: rgba(0, 0, 0, 0.0) !important;
     padding: 15px;
     text-align: center;
@@ -113,7 +113,7 @@ button {
 
 
 .button.color1 {
-    border: 5px solid white !important;
+    border: 3px solid white !important;
     background-color: rgba(0, 0, 0, 0.0) !important;
     padding: 15px;
     text-align: center;
@@ -126,19 +126,21 @@ button {
 }
 
 .elementor-button-link:hover {
-    border: 0 !important;
+    border: 3px solid white !important;
     background: rgb(0, 203, 245);
     background: linear-gradient(270deg, rgba(0, 203, 245, 1) 0%, rgba(52, 98, 233, 1) 35%, rgba(101, 0, 221, 1) 50%, rgba(179, 0, 166, 1) 65%, rgba(255, 0, 113, 1) 100%) !important;
+    cursor: pointer;
 }
 
 .button.color1:hover {
-    border: 0 !important;
+    border: 3px solid white !important;
     background: rgb(0, 203, 245);
     background: linear-gradient(270deg, rgba(0, 203, 245, 1) 0%, rgba(52, 98, 233, 1) 35%, rgba(101, 0, 221, 1) 50%, rgba(179, 0, 166, 1) 65%, rgba(255, 0, 113, 1) 100%) !important;
+    cursor: pointer;
 }
 
 .button.white {
-    border: 5px solid white !important;
+    border: 3px solid white !important;
     background-color: rgba(0, 0, 0, 0.0) !important;
     padding: 15px;
     text-align: center;
@@ -151,9 +153,10 @@ button {
 }
 
 .button.white:hover {
-    border: 0 !important;
+    border: 3px solid white !important;
     background: rgb(0, 203, 245);
     background: linear-gradient(270deg, rgba(0, 203, 245, 1) 0%, rgba(52, 98, 233, 1) 35%, rgba(101, 0, 221, 1) 50%, rgba(179, 0, 166, 1) 65%, rgba(255, 0, 113, 1) 100%) !important;
+    cursor: pointer;
 }
 
 .button.round {
@@ -161,7 +164,7 @@ button {
 }
 
 .elementor-widget-button .elementor-button {
-    border: 5px solid white !important;
+    border: 3px solid white !important;
     background-color: rgba(0, 0, 0, 0.0) !important;
     padding: 15px;
     text-align: center;
@@ -173,7 +176,7 @@ button {
 }
 
 .elementor-element.elementor-button-info .elementor-button {
-    border: 5px solid white !important;
+    border: 3px solid white !important;
     background-color: rgba(0, 0, 0, 0.0) !important;
     padding: 15px;
     text-align: center;
@@ -188,6 +191,7 @@ button:hover {
     border: 0 !important;
     background: rgb(0, 203, 245);
     background: linear-gradient(270deg, rgba(0, 203, 245, 1) 0%, rgba(52, 98, 233, 1) 35%, rgba(101, 0, 221, 1) 50%, rgba(179, 0, 166, 1) 65%, rgba(255, 0, 113, 1) 100%) !important;
+    cursor: pointer;
 }
 
 
@@ -275,7 +279,7 @@ div#wp-custom-header.cp-video-bg {
 
 
 #gratis_wrapper button {
-    border: 5px solid white !important;
+    border: 3px solid white !important;
     background-color: rgba(0, 0, 0, 0.0) !important;
     padding: 15px;
     text-align: center;
@@ -342,7 +346,7 @@ div#wp-custom-header.cp-video-bg {
 
     main {
         margin: 0 auto;
-        max-width: 44vw;
+        max-width: 60vw;
     }
 
     h1.hero-title {
@@ -556,7 +560,7 @@ label {
 
 
 .elementor-element.elementor-button-success .elementor-button {
-    border: 5px solid rgba(255, 255, 255, 0) !important;
+    border: 3px solid rgba(255, 255, 255, 0) !important;
     background-color: rgba(0, 0, 0, 0.0) !important;
     padding: 15px;
     text-align: center;
@@ -679,6 +683,7 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     margin-top: 100px;
 }
 
+
 .oversigt_txt {
     margin: 20px;
 }
@@ -699,6 +704,7 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 10px;
+    margin-bottom: 0px !important
 }
 
 #filtrering button {
@@ -717,6 +723,11 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
 }
 
 @media only screen and (min-width: 600px) {
+
+    .line.top {
+        height: 5vw;
+    }
+
 
     #filtrering {
         display: flex;
@@ -747,7 +758,19 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
         margin-right: 27VW;
     }
 
+    #hold_container img: {
+        transition: transform .5s;
+        animation-timing-function: ease-in;
+    }
+
+    #hold_container img:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
 }
+
+
 
 
 
@@ -808,9 +831,21 @@ article p {
         margin-top: 100px;
     }
 
+
     .single_button {
         margin-top: 100px;
         width: 200px;
+        place-self: center;
+
+    }
+
+    .sinlge_info {
+        place-self: center;
+
+    }
+
+    .single_button button {
+        width: 13vw;
     }
 
 }
@@ -860,3 +895,7 @@ article p {
 }
 
 /*KALEDNER*/
+
+/*ANIMATIONER*/
+
+/*ANIMATIONER*/

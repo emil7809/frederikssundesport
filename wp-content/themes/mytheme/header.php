@@ -65,11 +65,11 @@ if ( function_exists( 'wp_body_open' ) ) {
             #main_menu {}
 
             #menu-item-40 {
-                margin-right: 200px;
+                margin-right: 100px;
             }
 
             #menu-item-43 {
-                margin-left: 200px;
+                margin-left: 100px;
             }
 
             .logo_col {
@@ -82,13 +82,24 @@ if ( function_exists( 'wp_body_open' ) ) {
                 padding-right: 20px;
             }
 
-               ul.dropdown-menu ul {
-               background-color: black;
+            ul.dropdown-menu ul {
+                background-color: black;
+            }
+
+            .offcanvas_menu li.open>a,
+            .offcanvas_menu li.open>a:hover {
+                background-color: black;
+                color: #00CBF5;
+                border-left: 3px solid #00CBF5;
+            }
+
+            #offcanvas-wrapper {
+                background-color: #262727;
             }
 
 
-             ul.dropdown-menu ul a:hover{
-               color: #00CBF5 !important;
+            ul.dropdown-menu ul a:hover {
+                color: #00CBF5 !important;
             }
 
             @media only screen and (max-width: 600px) {
@@ -103,6 +114,14 @@ if ( function_exists( 'wp_body_open' ) ) {
 
                 .logo_col {
                     display: block;
+                }
+
+                #menu-item-40 {
+                    margin-right: 200px;
+                }
+
+                #menu-item-43 {
+                    margin-left: 200px;
                 }
 
 

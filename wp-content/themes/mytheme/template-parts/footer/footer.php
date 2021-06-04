@@ -82,7 +82,7 @@
         background: rgb(111, 111, 111);
         background: linear-gradient(180deg, rgba(111, 111, 111, 1) 0%, rgba(72, 72, 72, 1) 100%);
         text-align: left !important;
-
+        margin-top: 100px;
     }
 
     .footer_wrapper {
@@ -143,6 +143,10 @@
     }
 
     @media only screen and (min-width:600px) {
+
+        .footer {
+            margin-top: 300px;
+        }
 
         .footer_wrapper {
             display: grid;
