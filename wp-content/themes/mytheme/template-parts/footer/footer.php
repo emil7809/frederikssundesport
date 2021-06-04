@@ -10,7 +10,7 @@
 -->
 
             <div id="kontakt_wrapper" class="margin_bottom center">
-                <h3>Kontakt Os</h3>
+                <h4>Kontakt Os</h4>
                 <p>Formand: Søren Weimann <br>
                     Elmegårdvej 1A, Tørslev<br>
                     3630 Jægerspris<br>
@@ -21,7 +21,7 @@
             </div>
 
             <div id="nyttige" class="margin_bottom center">
-                <h3>Nyttige Links</h3>
+                <h4>Nyttige Links</h4>
                 <a href="">Om Os</a><br>
                 <a href="">Nyheder</a><br>
                 <a href="">Hold</a><br>
@@ -29,7 +29,7 @@
             </div>
 
             <div id="follow" class="margin_bottom center">
-                <h3>Følg Os</h3>
+                <h4>Følg Os</h4>
                 <div id="some">
                     <img src="<?php echo get_stylesheet_directory_uri()?>/img/icons/face.png" alt="facebook">
                     <img src="<?php echo get_stylesheet_directory_uri()?>/img/icons/dis.png" alt="discord">
@@ -85,14 +85,23 @@
 
     }
 
+    .footer_wrapper {
+        padding: 20px;
+    }
+
+    .footer-simple .footer-content {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border-top: 0px;
+    }
+
     .footer_wrapper p {
         color: white !important;
         font-family: 'Oswald', sans-serif;
         font-weight: lighter;
         text-align: left;
         text-align: center !important;
-        font-size: 1.5rem;
-        line-height: 30px;
+        font-size: 1rem;
         padding: 0;
         margin: 0;
     }
@@ -101,15 +110,15 @@
         color: white !important;
         font-family: 'Oswald', sans-serif;
         font-weight: lighter !important;
-        font-size: 1.5rem;
-        line-height: 30px;
+        font-size: 1rem;
     }
 
-    .footer_wrapper h3 {
+    .footer_wrapper h4 {
         color: white !important;
         font-family: 'Oswald', sans-serif !important;
         font-weight: bold !important;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        margin-bottom: 40px;
 
     }
 
@@ -154,8 +163,8 @@
 
         #some img {
             margin-top: 20px;
-            width: 100px;
-            height: 100px;
+            width: 50px;
+            height: 50px;
             padding: 0;
             margin: 0;
 

@@ -7,8 +7,18 @@
     <div class="line top"></div>
 
     <div class="oversigt_txt">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>Medlemskab af Frederikssund Esport koster 750,- kr. pr. halvår. Som en del af medlemskabet får du en klubtrøje. Den bestilles når kontingentet er betalt første gang. Du kan se klubtrøjen her. Yderligere klubtøj og -udstyr kan købes i vores shop hos Epparel, hvis du har lyst (klik her). Bemærk, at tøjet specialfremstilles, så der kan være op til 7 ugers leveringstid.
+            <br>
+            <br>
+            Husk at du bliver medlem i Frederikssund Esport – ikke kunde. Vi er en forening med ulønnede frivillige, og vi forventer derfor, at alle medlemmer bidrager til klubben. Det kan f.eks. være med hjælp til istandsættelse af klublokaler, hjælp til vores LAN-arrangementer eller andre events. Som udgangspunkt regner vi med, at forældrene bidrager for medlemmer under 15 år, men I afgør naturligvis selv derhjemme, hvem der giver en hånd med.
+            <br>
+            <br>
+            Men ambitionerne rækker videre end det. Hvis der er interesse for andre spil, så udvider vi gerne løbende i den udstrækning vi kan finde trænere og tid i lokaler og på udstyret. Og så håber vi også, at vi på et tidspunkt kan have både bredde og elitehold.
+            <br>
+            <br>
+            OBS!
+            Det er en forudsætning for at tilmelde sig et hold, at du selv har en konto til det pågældende spil.
+        </p>
     </div>
 
     <nav id="filtrering"><button data-hold="alle" class="valgt">Alle</button></nav>
@@ -19,8 +29,8 @@
 
 <template>
     <article>
-      <h2 class="vores_hold"></h2>
-       <div class="line"></div>
+        <h2 class="vores_hold"></h2>
+        <div class="line"></div>
         <img src="" alt="">
         <p class="tekst"></p>
     </article>
