@@ -20,9 +20,14 @@
 
     </main>
     <script>
+        //variable
         let hold;
+
+        //url til REST API
         const dbUrl = "http://emilyhoolahan.com/kea/10_eksamen/frederikssundesport/wp-json/wp/v2/hold/" + <?php echo get_the_ID() ?>;
 
+
+        //funktion der henter JSON
         async function getJson() {
             const data = await fetch(dbUrl);
             hold = await data.json();
@@ -30,6 +35,8 @@
             visHold();
         }
 
+
+        //Funktion der henter Data og viser de valgte elementer
         function visHold() {
             document.querySelector("h2").textContent = hold.hold;
             document.querySelector("#img").src = hold.billedes.guid;
@@ -37,9 +44,6 @@
             document.querySelector("button").addEventListener("click", tilbage);
         }
 
-        function tilbage() {
-            window.history.back();
-        }
 
         getJson();
 

@@ -37,7 +37,7 @@ if ( function_exists( 'wp_body_open' ) ) {
             .navigation-bar.coloured-nav {
                 background: rgb(10, 0, 7);
                 background: linear-gradient(270deg, rgba(10, 0, 7, 1) 0%, rgba(38, 39, 39, 1) 35%, rgba(80, 80, 80, 1) 50%, rgba(38, 39, 39, 1) 65%, rgba(10, 0, 7, 1) 100%);
-                z-index: 100 !important;
+                z-index: 80 !important;
                 height: 100px;
             }
 
@@ -49,7 +49,7 @@ if ( function_exists( 'wp_body_open' ) ) {
             #logo {
                 width: 150px;
                 margin-top: -90px;
-                z-index: 100;
+                z-index: 80;
                 position: fixed;
                 margin-left: -90px;
             }
@@ -58,21 +58,22 @@ if ( function_exists( 'wp_body_open' ) ) {
                 justify-content: center;
             }
 
-            #main_menu {}
-
-            #menu-item-40 {
-                margin-right: 100px;
-            }
 
             #menu-item-43 {
-                margin-left: 100px;
+                margin-right: 200px;
             }
+
+            #menu-item-40 {
+                margin-left: 200px;
+            }
+
+
 
             .logo_col {
                 display: none;
             }
 
-            #main_menu a {
+            #main_menu .active-line-bottom .main-menu .dropdown-menu a {
                 font-size: 1rem;
                 padding-left: 20px;
                 padding-right: 20px;
@@ -101,8 +102,16 @@ if ( function_exists( 'wp_body_open' ) ) {
                 background-color: #262727;
             }
 
+            .main_menu_col [data-component="offcanvas"] i.fa {
+                font-size: 3rem;
+            }
 
-            @media only screen and (max-width: 600px) {
+            #main_menu a:hover {
+                color: #00CBF5 !important;
+            }
+
+
+            @media only screen and (max-width: 800px) {
 
                 #logo {
                     display: none;
@@ -116,14 +125,19 @@ if ( function_exists( 'wp_body_open' ) ) {
                     display: block;
                 }
 
-                #menu-item-40 {
-                    margin-right: 200px;
-                }
+
+
+            }
+
+            @media only screen and (max-width: 1200px) {
 
                 #menu-item-43 {
-                    margin-left: 200px;
+                    margin-right: 100px !important;
                 }
 
+                #menu-item-40 {
+                    margin-left: 100px !important;
+                }
 
             }
 

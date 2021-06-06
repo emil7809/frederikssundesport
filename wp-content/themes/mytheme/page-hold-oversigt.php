@@ -7,7 +7,7 @@
     <div class="line top"></div>
 
     <div class="oversigt_txt">
-        <p>Medlemskab af Frederikssund Esport koster 750,- kr. pr. halvår. Som en del af medlemskabet får du en klubtrøje. Den bestilles når kontingentet er betalt første gang. Du kan se klubtrøjen her. Yderligere klubtøj og -udstyr kan købes i vores shop hos Epparel, hvis du har lyst (klik her). Bemærk, at tøjet specialfremstilles, så der kan være op til 7 ugers leveringstid.
+        <p>Medlemskab af Frederikssund Esport koster 750,- kr. pr. halvår. Som en del af medlemskabet får du en klubtrøje. Den bestilles når kontingentet er betalt første gang. Du kan se klubtrøjen her. Yderligere klubtøj og -udstyr kan købes i vores shop hos Epparel, hvis du har lyst. Bemærk, at tøjet specialfremstilles, så der kan være op til 7 ugers leveringstid.
             <br>
             <br>
             Husk at du bliver medlem i Frederikssund Esport – ikke kunde. Vi er en forening med ulønnede frivillige, og vi forventer derfor, at alle medlemmer bidrager til klubben. Det kan f.eks. være med hjælp til istandsættelse af klublokaler, hjælp til vores LAN-arrangementer eller andre events. Som udgangspunkt regner vi med, at forældrene bidrager for medlemmer under 15 år, men I afgør naturligvis selv derhjemme, hvem der giver en hånd med.
@@ -37,13 +37,17 @@
 </template>
 
 <script>
+
+    // Variabler
     let holdd;
     let categories;
     let filterHold = "alle";
 
+    //url til REST API
     const dbUrl = "http://emilyhoolahan.com/kea/10_eksamen/frederikssundesport/wp-json/wp/v2/hold?per_page=100";
     const catUrl = "http://emilyhoolahan.com/kea/10_eksamen/frederikssundesport/wp-json/wp/v2/categories";
 
+    //Funktion der henter henter data fra fra REST API
     async function getJson() {
         const data = await fetch(dbUrl);
         const catdata = await fetch(catUrl);
@@ -58,6 +62,7 @@
         opretKnapper();
     }
 
+    // funktion der opretter filtrerings knapper af 'cat'egories
     function opretKnapper() {
         categories.forEach(cat => {
             document.querySelector("#filtrering").innerHTML += `<button class="filter" data-hold="${cat.id}">${cat.name}</button>`;
@@ -68,12 +73,14 @@
         buttonsClick();
     }
 
+    //funktion der gør det muligt at klikke på de individuelle filtrerings knapperne
     function buttonsClick() {
         document.querySelectorAll("#filtrering button").forEach(elm => {
             elm.addEventListener("click", filtrering);
         })
     }
 
+    // funktion der henter data på den knap der er blevet trykket, i prossesen filtrere den data fra de andre knapper fra
     function filtrering() {
         filterHold = this.dataset.hold;
         document.querySelector(".valgt").classList.remove("valgt");
@@ -81,6 +88,7 @@
         visHoldd();
     }
 
+    //Funktion der henter Data og viser de valgte elementer
     function visHoldd() {
         let temp = document.querySelector("template");
         let container = document.querySelector("#hold_container");

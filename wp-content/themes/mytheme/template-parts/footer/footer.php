@@ -22,10 +22,10 @@
 
             <div id="nyttige" class="margin_bottom center">
                 <h4>Nyttige Links</h4>
-                <a href="">Om Os</a><br>
-                <a href="">Nyheder</a><br>
-                <a href="">Hold</a><br>
-                <a href="">Shop</a><br>
+                <a href="http://emilyhoolahan.com/kea/10_eksamen/frederikssundesport/om-os/">Om Os</a><br>
+                <a href="http://emilyhoolahan.com/kea/10_eksamen/frederikssundesport/kalender/#NYHEDER">Nyheder</a><br>
+                <a href="http://emilyhoolahan.com/kea/10_eksamen/frederikssundesport/hold-oversigt/">Hold</a><br>
+                <a href="http://emilyhoolahan.com/kea/10_eksamen/frederikssundesport/shop/">Shop</a><br>
             </div>
 
             <div id="follow" class="margin_bottom center">
@@ -75,12 +75,8 @@
     }
 
     .footer {
-        /*
-        width: 100%;
-        max-width: 100%;
-*/
         background: rgb(111, 111, 111);
-        background: linear-gradient(180deg, rgba(111, 111, 111, 1) 0%, rgba(72, 72, 72, 1) 100%);
+        background: linear-gradient(180deg, rgba(111, 111, 111, 1) 0%, #1f1f1f 100%);
         text-align: left !important;
         margin-top: 100px;
     }
@@ -97,20 +93,25 @@
 
     .footer_wrapper p {
         color: white !important;
-        font-family: 'Oswald', sans-serif;
-        font-weight: lighter;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: normal;
+        font-size: 1rem;
         text-align: left;
         text-align: center !important;
         font-size: 1rem;
         padding: 0;
         margin: 0;
+        color: white;
+
     }
 
     .footer_wrapper a {
         color: white !important;
-        font-family: 'Oswald', sans-serif;
-        font-weight: lighter !important;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: normal;
         font-size: 1rem;
+        text-align: center;
+        text-decoration: none;
     }
 
     .footer_wrapper h4 {
@@ -127,6 +128,7 @@
         width: 15vw;
         height: 15vw;
         padding: 10px;
+        cursor: pointer;
     }
 
     .margin_bottom {
@@ -152,9 +154,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             padding: 50px;
-
         }
-
 
 
         .footer_wrapper p {
@@ -171,7 +171,6 @@
             height: 50px;
             padding: 0;
             margin: 0;
-
         }
 
         #some {
@@ -198,6 +197,10 @@
 
         h3 {
             margin-bottom: 50px;
+        }
+
+        .footer a:hover {
+            color: #00CBF5 !important;
         }
 
 
