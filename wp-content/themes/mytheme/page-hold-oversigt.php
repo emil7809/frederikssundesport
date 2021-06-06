@@ -66,10 +66,7 @@
     function opretKnapper() {
         categories.forEach(cat => {
             document.querySelector("#filtrering").innerHTML += `<button class="filter" data-hold="${cat.id}">${cat.name}</button>`;
-
-
         })
-
         buttonsClick();
     }
 

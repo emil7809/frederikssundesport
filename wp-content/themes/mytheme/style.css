@@ -10,6 +10,7 @@ Description: Frederikssund Esport
 /*SCROLL BAR*/
 
 
+
 ::-webkit-scrollbar {
     background: #000000;
 }
@@ -351,7 +352,24 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
 
 /*FORMS*/
 
+/*TIDSPLAN*/
+
+.eael-event-calendar-wrapper .eaelec-modal-header h2 {
+    color: black !important;
+}
+
+/*TIDSPLAN*/
+
 /*HOLD OVERSIGT*/
+
+
+
+main {
+    margin: 0 auto;
+    max-width: 60vw;
+}
+
+
 
 .top {
     margin-top: 100px;
@@ -522,5 +540,3 @@ article p {
 
 
 /*SINGLE*/
-
-

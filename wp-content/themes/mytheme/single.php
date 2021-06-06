@@ -50,6 +50,6 @@
     </script>
 
 
-</section><!-- #primary -->
+</section>
 
 <?php get_footer(); ?>
