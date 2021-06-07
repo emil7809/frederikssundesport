@@ -31,10 +31,10 @@
             <div id="follow" class="margin_bottom center">
                 <h4>Følg Os</h4>
                 <div id="some">
-                    <img src="<?php echo get_stylesheet_directory_uri()?>/img/icons/face.png" alt="facebook">
-                    <img src="<?php echo get_stylesheet_directory_uri()?>/img/icons/dis.png" alt="discord">
-                    <img src="<?php echo get_stylesheet_directory_uri()?>/img/icons/inst.png" alt="instergram">
-                    <img src="<?php echo get_stylesheet_directory_uri()?>/img/icons/tick.png" alt="tiktok">
+                    <a href="https://www.facebook.com/FrederikssundEsport" target="_blank"> <img src="<?php echo get_stylesheet_directory_uri()?>/img/icons/face.png" alt="facebook"></a>
+                    <a href="https://discord.com/" target="_blank"> <img src="<?php echo get_stylesheet_directory_uri()?>/img/icons/dis.png" alt="discord"></a>
+                    <a href="https://www.instagram.com/frederikssund_esport/" target="_blank"> <img src="<?php echo get_stylesheet_directory_uri()?>/img/icons/inst.png" alt="instergram"></a>
+                    <a href="https://www.tiktok.com/@hoolygirltoday/video/6969653507532000518?lang=en&is_copy_url=0&is_from_webapp=v1&sender_device=pc&sender_web_id=6954384633468487173" target="_blank"> <img src="<?php echo get_stylesheet_directory_uri()?>/img/icons/tick.png" alt="tiktok"></a>
                 </div>
             </div>
 

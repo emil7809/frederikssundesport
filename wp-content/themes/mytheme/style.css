@@ -71,7 +71,6 @@ h2 {
     font-family: 'Oswald', sans-serif !important;
     font-weight: bold !important;
     font-size: 2rem;
-    /*text-align: left;*/
 }
 
 h3 {
@@ -117,6 +116,12 @@ p.header-subtitle {
     text-align: center;
 }
 
+/*
+#wp-custom-header {
+  background-position-x: -130px !important;
+}
+*/
+
 div#wp-custom-header.cp-video-bg {
     background-image: url(img/splash_mobil.jpg) !important;
     background-size: cover !important;
@@ -129,7 +134,54 @@ div#wp-custom-header.cp-video-bg {
     width: 100%;
     margin-top: 0;
     top: -70px;
-    -webkit-transform: translate3d(0, 0, -2px);
+
+}
+
+.red_salvation {
+    background: rgb(0, 203, 245) !important;
+    background: linear-gradient(90deg, rgba(0, 203, 245, 1) 0%, rgba(101, 0, 221, 1) 50%, rgba(255, 0, 113, 1) 100%) !important;
+}
+
+.header.color-overlay:after {
+    background: url(img/splash_img2.jpg) center center/ cover no-repeat !important;
+
+}
+
+.color-overlay:after {
+    top: 70px;
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+
+
+    h1.hero-title {
+        font-size: 6rem;
+        text-shadow: 8px 8px 8px black;
+    }
+
+    p.header-subtitle {
+        font-size: 6rem;
+        text-shadow: 8px 8px 8px black;
+    }
+
+    div#wp-custom-header.cp-video-bg {
+
+        top: -8vw !important;
+    }
+
+    .header-buttons-wrapper {
+        margin-top: 50px;
+    }
+
+    iframe {
+        border: none;
+        max-width: 100%;
+        height: 28vw;
+        width: 50vw;
+    }
 
 }
 
@@ -241,58 +293,6 @@ button {
 
 /*BUTTON*/
 
-
-/*HERRO*/
-
-.red_salvation {
-    background: rgb(0, 203, 245) !important;
-    background: linear-gradient(90deg, rgba(0, 203, 245, 1) 0%, rgba(101, 0, 221, 1) 50%, rgba(255, 0, 113, 1) 100%) !important;
-}
-
-.header.color-overlay:after {
-    background: url(img/splash_img2.jpg) center center/ cover no-repeat !important;
-
-}
-
-.color-overlay:after {
-    top: 70px;
-}
-
-
-
-
-@media only screen and (min-width: 600px) {
-
-
-    h1.hero-title {
-        font-size: 6rem;
-        text-shadow: 8px 8px 8px black;
-    }
-
-    p.header-subtitle {
-        font-size: 6rem;
-        text-shadow: 8px 8px 8px black;
-    }
-
-    div#wp-custom-header.cp-video-bg {
-
-        top: -8vw !important;
-    }
-
-    .header-buttons-wrapper {
-        margin-top: 50px;
-    }
-
-    iframe {
-        border: none;
-        max-width: 100%;
-        height: 28vw;
-        width: 50vw;
-    }
-
-}
-
-/*HERRO*/
 
 
 /*VI SØGER*/
