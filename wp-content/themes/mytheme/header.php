@@ -46,7 +46,7 @@ if ( function_exists( 'wp_body_open' ) ) {
                 background: rgb(10, 0, 7);
                 background: linear-gradient(270deg, rgba(10, 0, 7, 1) 0%, rgba(38, 39, 39, 1) 35%, rgba(80, 80, 80, 1) 50%, rgba(38, 39, 39, 1) 65%, rgba(10, 0, 7, 1) 100%);
                 z-index: 100 !important;
-                height: 100px;
+                height: 90px;
             }
 
             #logo_container {
@@ -59,7 +59,7 @@ if ( function_exists( 'wp_body_open' ) ) {
                 margin-top: -90px;
                 z-index: 100;
                 position: fixed;
-                margin-left: -90px;
+                margin-left: -75px;
             }
 
             .main_menu_col {
